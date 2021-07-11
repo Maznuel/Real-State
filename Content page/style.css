@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/elbueno.svg);
+}
+
+header {
+  background: #ff0000;
+  color: #ffffff;
+  height: 9vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header i {
+  color: #ffffff;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+header a {
+  margin-left: 60px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+header ul {
+  margin-right: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header ul li {
+  color: #ff0000;
+  margin-left: 70px;
+}
+
+.line {
+  height: 2px;
+  background: #ff0000;
+}
+
+.d {
+  position: relative;
+  grid-column: 0 1;
+  grid-row: 0 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+.bed,
+.bath,
+.location,
+.meters,
+.price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.bed {
+  margin-left: 10px;
+}
+
+.price,
+.location,
+.bed,
+.bath {
+  border-radius: 0px;
+}
+
+i,
+h6 {
+  color: white;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+i {
+  margin-left: 5px;
+  color: white;
+}
+
+.price,
+.meters,
+.location {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+.bed-info,
+.bath-info,
+.location-info,
+.meters-info,
+.price-info {
+  width: 100%;
+}
+
+.info {
+  margin-top: 76.5%;
+  background: #ff0000;
+  border-radius: 0 0 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  width: 800%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  margin-top: 50px;
+}
+
+.container {
+  margin-bottom: 100px;
+  margin-top: 100px;
+  width: 92.5%;
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-gap: 150px;
+  height: 100%;
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+  height: 12vw;
+  width: 55%;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #FF0000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+.filters-xd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+
+.rent-buy,
+.city,
+.dimentions {
+  height: 50px;
+  width: 200px;
+  background: #FF0000;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.rent-buy select,
+.city select,
+.dimentions select {
+  width: 100px;
+  -webkit-appearance: none;
+  border: 2px solid #ffffff;
+  margin-top: 50px;
+  position: absolute;
+  border-radius: 30px;
+}
+
+.rent-buy select option,
+.city select option,
+.dimentions select option {
+  margin-top: 20px;
+}
+
+.rent-buy i,
+.city i,
+.dimentions i {
+  pointer-events: none;
+  margin-bottom: 15px;
+  margin-left: 40%;
+  z-index: 100;
+  color: black;
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 95%;
+  margin-left: 2.5%;
+}
+
+.arrows .fa-angle-left,
+.arrows .fa-angle-right {
+  color: white;
+  margin-left: 0px;
+  font-size: 45px;
+}
+
+.arrows .arrow-container {
+  border-radius: 50%;
+  width: 45px;
+  background-color: rgba(0, 0, 0, 0.431);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.arrows .arrow-container :hover {
+  border-radius: 50%;
+  width: 70px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

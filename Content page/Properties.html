@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+        integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Properties</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Luxury Spain</a>
+    </header>
+    <div class="line"></div>
+    <div class="filters">
+        <h1>Filters</h1>
+        <div class="filters-xd">
+            <div class="rent-buy">
+                <h4>Price Range</h4>
+                <select name="Price Range" id="price-filter">
+                    <option value="none">None</option>
+                    <option value=2000000>0 - 2 MM</option>
+                    <option value=5000000>2 MM - 5 MM</option>
+                    <option value=10000000>5 MM -10MM</option>
+                    <option value=15000000>+ 10 Million</option>
+                </select>
+                <i class="fas fa-sort-down"></i>
+
+            </div>
+            <div class="city">
+                <h4>City</h4>
+                <select name="city" id="city-filter">
+                    <option value="none">None</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Malaga">Malaga</option>
+                    <option value="Ibiza">Ibiza</option>
+                </select>
+                <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="dimentions">
+                <h4>Square Meters</h4>
+                <select name="buy-rent" id="meters-filter">
+                    <option value="none">None</option>
+                    <option value="500">0 - 500 </option>
+                    <option value="1000">500 - 1000 </option>
+                    <option value="2000"> 1000 - 2000 </option>
+                    <option value="3000"> + 2000 </option>
+                </select>
+                <i class="fas fa-sort-down"></i>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container">
+            <div class="d d1">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d2">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d3">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d4">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d5">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d6">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d7">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d8">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d9">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d10">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d11">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d12">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d13">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d14">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d15">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d16">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d17">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d18">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d19">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d20">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="d d21">
+                <div class="arrows">
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-left"></i>
+                    </div>
+                    <div class="arrow-container">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="bed">
+                        <i class="fas fa-bed"></i>
+                        <h6 class="bed-info">7</h6>
+                    </div>
+                    <div class="bath">
+                        <i class="fas fa-bath"></i>
+                        <h6 class="bath-info">8</h6>
+                    </div>
+                    <div class="price">
+                        <i class="fas fa-euro-sign"></i>
+                        <h6 class="price-info">20 000 000</h6>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h6 class="location-info">Madrid</h6>
+                    </div>
+                    <div class="meters">
+                        <i class="fas fa-th-large"></i>
+                        <h6 class="meters-info">1 700 m2</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
