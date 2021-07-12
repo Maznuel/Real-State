@@ -298,7 +298,7 @@ section {
   section {
     width: 95%;
     margin-top: 80px;
-    margin-right: auto;
+    margin-right: 100px;
   }
   .container {
     -ms-grid-columns: (380px)[1];
