@@ -298,6 +298,7 @@ section {
   section {
     width: 100%;
     margin-top: 80px;
+    margin-left: 10%;
   }
   .container {
     -ms-grid-columns: (380px)[1];
