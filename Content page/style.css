@@ -301,8 +301,8 @@ section {
     margin-top: 80px;
   }
   .container {
-    -ms-grid-columns: (400px)[1];
-        grid-template-columns: repeat(1, 400px);
+    -ms-grid-columns: (350px)[1];
+        grid-template-columns: repeat(1, 350px);
     -ms-grid-rows: auto;
         grid-template-rows: auto;
   }
