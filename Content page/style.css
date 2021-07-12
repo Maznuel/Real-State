@@ -296,9 +296,9 @@ section {
 
 @media screen and (max-width: 1200px) {
   section {
-    width: 95%;
+    width: 90%;
     margin-top: 80px;
-    margin-right: 200px;
+    margin-right: auto;
   }
   .container {
     -ms-grid-columns: (380px)[1];
