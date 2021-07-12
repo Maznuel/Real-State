@@ -100,14 +100,6 @@ a {
   text-decoration: none;
 }
 
-/*.edificios{
-  width: 500px;
-  z-index: 100;
-  position: absolute;
-  margin-top: 15%;
-  margin-left: 60%;
-  border-radius: 30px;
-}*/
 .ciudades {
   border-radius: 30px;
   margin-left: 3%;
@@ -145,5 +137,62 @@ a {
 .edificios img {
   width: 500px;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .edificios {
+    margin-top: 95%;
+    width: 50%;
+    margin-left: 30%;
+  }
+  .edificios img {
+    width: 100%;
+  }
+  .edificios h2 {
+    font-size: 15px;
+  }
+  button {
+    margin-top: 120%;
+    padding: 0.5rem;
+    margin-left: 38%;
+  }
+  a {
+    font-size: 20px;
+    padding: 30px;
+  }
+  .portada h1 {
+    z-index: 1000;
+    font-size: 50px;
+    margin-left: 0;
+    margin-right: 30%;
+  }
+  .portada .arepa {
+    margin-left: -50%;
+    width: 200%;
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body, html {
+    overflow: hidden;
+  }
+  header {
+    width: 100%;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header h1 {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+  header .logo {
+    width: 35%;
+    margin-left: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */
