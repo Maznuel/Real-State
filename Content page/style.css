@@ -325,6 +325,7 @@ section {
     height: 100%;
   }
   header a {
+    color: black;
     margin-left: 30%;
   }
 }
