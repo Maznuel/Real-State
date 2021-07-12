@@ -212,6 +212,7 @@ section {
   .container{
     grid-template-columns: repeat(1, 380px);
     grid-template-rows: auto;
+    grid-gap:20px;
   }
   .filters{
     width: 100%;
